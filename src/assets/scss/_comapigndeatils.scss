@@ -1,0 +1,137 @@
+@import './variable';
+
+.campaign-Details {
+	display: flex;
+	justify-content: center;
+	color: var(--dark-sapphire-2, #1a2234);
+	text-align: center;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
+	padding: 18px 40px;
+	font-weight: 600;
+	flex-direction: column;
+	line-height: 32px;
+	strong {
+		color: #1a2234;
+		font-family: $fontFamily;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 32px;
+		margin-bottom: 24px;
+	}
+	.deatils {
+		width: 580px;
+		gap: 16px;
+		display: flex;
+		padding: 24px 20px;
+		flex-direction: column;
+
+		border: 1px dashed #7c889b;
+		li {
+			display: flex;
+			justify-content: space-between;
+			.media-file {
+				display: flex !important;
+				justify-content: end !important;
+			}
+			label {
+				color: #303d51;
+				font-family: $fontFamily;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 24px;
+			}
+			span {
+				color: #616e82;
+				text-align: right;
+				font-family: $fontFamily;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				width: 245px;
+				word-break: break-all;
+			}
+			p {
+				display: flex;
+
+				padding: 10px 20px;
+				align-items: center;
+				gap: 8px;
+				border-radius: 52px;
+				border: 1px solid var(--grey-sapphire-3, #b3bcc8);
+				background: var(--grey-sapphire-6, #eff1f4);
+				color: var(--dark-sapphire-5, #616e82);
+				font-family: $fontFamily;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 0.43px;
+				margin: 0;
+			}
+			.campaign-Details {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+		.media-file {
+			display: flex;
+			justify-content: end;
+		}
+	}
+}
+.button-extand-class {
+	cursor: pointer;
+	padding: 16px 0px;
+	background: none;
+	// gap: 10px;
+	border-radius: 4px;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 100% */
+}
+.confirmBtn-wrapper {
+	.confirm-btn {
+		display: flex;
+		flex-direction: row;
+		gap: 17px;
+		margin-top: 24px;
+		margin-bottom: 10px;
+		margin-left: 41px;
+		.back-btn {
+			width: 95px;
+			@extend .button-extand-class;
+			color: var(--primary-sapphire-1, #863288);
+
+			border: 1px solid var(--primary-sapphire-1, #863288);
+		}
+		.cancel-btn {
+			width: 101px;
+			@extend .button-extand-class;
+
+			color: var(--primary-sapphire-1, #863288);
+
+			border: 1px solid var(--primary-sapphire-1, #863288);
+		}
+		.save-btn {
+			width: 142px;
+			@extend .button-extand-class;
+			border: none;
+			color: var(--white, #fff);
+
+			background: var(--primary-sapphire-1, #863288);
+		}
+		.submit-btn {
+			width: 195px;
+			@extend .button-extand-class;
+			border: none;
+			color: var(--white, #fff);
+
+			background: var(--primary-sapphire-1, #863288);
+		}
+	}
+}

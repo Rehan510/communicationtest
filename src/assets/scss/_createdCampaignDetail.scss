@@ -1,0 +1,27 @@
+.campaign-details-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	background: var(--white, #fff);
+	box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.05);
+	margin-top: 16px;
+	align-items: flex-start;
+	.created-campaign-wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		margin-right: 40px;
+
+		strong {
+			color: var(--dark-sapphire-2, #1a2234);
+			padding-top: 37px;
+			font-family: Poppins;
+			text-align: left;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			padding-left: 38px;
+			line-height: 32px; /* 133.333% */
+		}
+	}
+}

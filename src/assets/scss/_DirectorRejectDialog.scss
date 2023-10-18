@@ -1,0 +1,114 @@
+.ant-modal-root {
+	.ant-modal-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.director-Dialog-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	margin-top: 24px;
+	gap: 16px;
+
+	.img-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.rejectmImage {
+			position: relative;
+		}
+		.rejectErrormImage {
+			position: absolute;
+		}
+	}
+	h1 {
+		color: var(--black, #000);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	p {
+		color: var(--grey-1, #9695a8);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 18px */
+		letter-spacing: -0.41px;
+	}
+	label {
+		color: var(--dark-sapphire-4, #303d51);
+		font-family: Poppins;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 7px; /* 171.429% */
+	}
+	textarea {
+		border-radius: 4px;
+		border: 1px solid var(--grey-sapphire-5, #e0e4e9);
+		background: var(--white, #fff);
+		padding: 12px 16px;
+		height: 105px;
+		width: 383px;
+
+		&::placeholder {
+			color: var(--grey-sapphire-3, #b3bcc8);
+			/* Caption */
+			font-family: Poppins;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px; /* 171.429% */
+		}
+	}
+	.dialogBtn-wrapper {
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		.cancel-btn {
+			width: 147px;
+			height: 44px;
+			background: #fff;
+			border-radius: 4px;
+			border: 1px solid var(--grey-sapphire-3, #b3bcc8);
+			color: var(--grey-1, #9695a8);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: -0.41px;
+			cursor: pointer;
+		}
+		.confirm-btn {
+			width: 147px;
+			height: 44px;
+			border-radius: 4px;
+			background: var(--primary-sapphire-1, #863288);
+			border: none;
+			color: var(--white, #fff);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: -0.41px;
+			cursor: pointer;
+		}
+	}
+	.changeStatus {
+		margin-top: 24px;
+	}
+}

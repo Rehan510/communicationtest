@@ -1,0 +1,39 @@
+@import './variable';
+
+.tabs-wrapper {
+	.ant-tabs {
+		.ant-tabs-nav {
+			border-radius: 8px 8px 0px 0px;
+			background: var(--white, #fff);
+			box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.07);
+			padding: 24px 238px 0px 33px;
+			color: $dark-sapphire-2;
+			font-family: $fontFamily;
+			:hover {
+				color: $dark-sapphire-2;
+			}
+		}
+		.ant-tabs-tab.ant-tabs-tab-active {
+			.ant-tabs-tab-btn {
+				color: $primaryColor;
+				font-family: $fontFamily;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+			}
+		}
+		.ant-tabs-tab-btn {
+			color: $dark-sapphire-2;
+
+			font-family: $fontFamily;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.ant-tabs-ink-bar {
+			background-color: $primaryColor !important;
+			border-radius: 8px 8px 0px 0px !important;
+			height: 6px;
+		}
+	}
+}

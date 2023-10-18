@@ -1,0 +1,106 @@
+@import './variable';
+
+.login-page {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('../images/loginBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 800px;
+	height: 100vh;
+	flex-direction: column;
+	overflow-y: auto;
+	.oneloadLogo {
+		position: absolute;
+		top: 23px;
+		left: 40px;
+	}
+	.input-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 606px;
+
+		.ant-card {
+			width: 100%;
+			border-radius: 20px;
+			background: #fff;
+			box-shadow: 0px 4px 160px 10px rgba(0, 0, 0, 0.12);
+			.ant-card-body {
+				min-height: 523px;
+				height: 100%;
+				text-align: center;
+				width: 100%;
+				padding: 36px 68px 73px 68px;
+			}
+		}
+		strong {
+			color: var(--dark-sapphire-1, #1a2234);
+			text-align: center;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 40px;
+		}
+		p {
+			color: var(--dark-sapphire-5, #616e82);
+			font-family: $fontFamily;
+			margin-top: 22px;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 22px;
+		}
+		.ant-form-item {
+			margin-bottom: 15px !important;
+			.ant-form-item-label > label {
+				color: var(--dark-sapphire-4, #48546a);
+				font-size: 14px;
+				font-weight: 600;
+				margin-top: 0.5rem;
+				line-height: normal;
+			}
+			.ant-form-item-control-input {
+				.ant-input {
+					border-radius: 4px !important;
+					background: #fff;
+				}
+			}
+		}
+		::placeholder {
+			color: var(--grey-sapphire-3, #b3bcc8);
+			// font-family: $fontFamily;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 22px;
+		}
+
+		.input-eye {
+			position: absolute;
+			right: 0;
+			padding: 4px 7px;
+		}
+		.login-btn {
+			max-width: 558px;
+			border-radius: 4px;
+			width: 100%;
+			height: 48px;
+			border: none;
+			color: #fff;
+			margin-top: 3rem;
+			background: var(--primary-sapphire-1, #863288);
+			box-shadow: 0px 1px 1px 0px rgba(217, 221, 226, 0.05);
+			font-family: $fontFamily;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			cursor: pointer;
+		}
+		.field {
+			height: 48px;
+		}
+	}
+}

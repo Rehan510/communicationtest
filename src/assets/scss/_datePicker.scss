@@ -1,0 +1,113 @@
+@import './variable';
+.date {
+	position: relative;
+	.calender-image {
+		position: absolute;
+		z-index: 1;
+		padding: 9px 12px;
+	}
+	.path-img {
+		position: absolute;
+		top: 10px;
+		right: 36px;
+	}
+}
+.ant-picker {
+	.ant-picker-input > input {
+		color: var(--dark-sapphire-7, #616e82);
+
+		font-family: Poppins;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		padding-left: 13px;
+	}
+}
+
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+		background: #fbe5fa !important;
+		.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before {
+			background: #fbe5fa !important;
+		}
+		.ant-picker-cell {
+			.ant-picker-cell-inner {
+				color: var(--black-87, rgba(0, 0, 0, 0.87));
+				text-align: center;
+				/* Caption (12 16) */
+				font-family: Roboto !important;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 133.333% */
+			}
+		}
+	}
+}
+.ant-picker-large {
+	padding: 6.5px 0px 7.5px 31px !important;
+}
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-today {
+		.ant-picker-cell-inner::before {
+			border-radius: 16px;
+			border: 1px solid var(--black-87, rgba(0, 0, 0, 0.87)) !important;
+		}
+	}
+}
+
+// start date radius and background color
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(
+			.ant-picker-cell-range-end
+		) {
+		.ant-picker-cell-inner {
+			color: white;
+			border-radius: 16px !important;
+			background: var(--primary-sapphire-1, #863288) !important;
+		}
+	}
+}
+// start date radius and background color
+
+// start date background color
+
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before {
+		background: #fbe5fa !important;
+	}
+}
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-range-end {
+		.ant-picker-cell-inner {
+			color: black;
+			background: none !important;
+		}
+	}
+}
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-range-start {
+		.ant-picker-cell-inner {
+			color: black;
+			background: none !important;
+		}
+	}
+}
+// start date background color
+
+// end date select radius
+.ant-picker-dropdown
+	.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):not(
+		.ant-picker-cell-range-start
+	)
+	.ant-picker-cell-inner {
+	border-radius: 16px !important;
+	color: white;
+	background: var(--primary-sapphire-1, #863288) !important;
+}
+.ant-picker-dropdown {
+	.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before {
+		background: #fbe5fa !important;
+	}
+}

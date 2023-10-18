@@ -1,0 +1,22 @@
+.confirm-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.rejected-details {
+		display: flex;
+		flex-direction: column;
+	}
+	img {
+		margin-top: 37px;
+	}
+	strong {
+		color: var(--dark-sapphire-2, #1a2234);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 32px; /* 133.333% */
+	}
+}

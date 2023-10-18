@@ -1,0 +1,46 @@
+@import './variable';
+
+.current-info-wrapper {
+	.main-heading {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		img {
+			cursor: pointer;
+		}
+		h1 {
+			color: #000;
+			font-family: $fontFamily;
+			font-size: 20px;
+			font-weight: 600;
+			margin: 1px 0;
+		}
+	}
+	.heading-tab {
+		display: flex;
+		margin-top: 17px;
+		img {
+			padding: 0 14px;
+		}
+		p {
+			cursor: pointer;
+			margin: 0;
+			color: #9695a8;
+			font-family: $fontFamily;
+			font-size: 14px;
+			font-weight: 400;
+			text-decoration-line: underline;
+		}
+	}
+}
+
+// stages css
+// .all-step-scss-p-tag {
+
+// }
+// .all-step-scss-span-tag {
+//     position: absolute;
+//     font-family: $fontFamily;
+//     font-size: 14px;
+//     font-weight: 500;
+// }

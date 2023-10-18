@@ -1,0 +1,191 @@
+@import './variable';
+.director-campaign-wrapper {
+	display: flex;
+	justify-content: center;
+	background: var(--white, #fff);
+	box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.05);
+	margin-top: 16px;
+	align-items: flex-start;
+	.campaign-Details {
+		display: flex;
+		justify-content: center;
+		color: var(--dark-sapphire-2, #1a2234);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 24px;
+		font-style: normal;
+		padding: 18px 40px;
+		font-weight: 600;
+		flex-direction: column;
+		line-height: 32px;
+		.detail-heading {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 24px;
+			label {
+				color: var(--dark-sapphire-2, #1a2234);
+				font-family: Poppins;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 32px; /* 133.333% */
+			}
+			// span {
+			//   color: var(--secondary-sapphire-1, #e85c2c);
+			//   text-align: center;
+			//   font-family: Poppins;
+			//   font-size: 18px;
+			//   font-style: normal;
+			//   font-weight: 500;
+			//   line-height: 32px; /* 177.778% */
+			// }
+		}
+		strong {
+			color: #1a2234;
+			font-family: $fontFamily;
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 32px;
+			margin-bottom: 24px;
+		}
+		.deatils {
+			width: 580px;
+			gap: 16px;
+			display: flex;
+			padding: 24px 20px;
+			flex-direction: column;
+
+			border: 1px dashed #7c889b;
+			li {
+				display: flex;
+				justify-content: space-between;
+				label {
+					color: #303d51;
+					font-family: $fontFamily;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 24px;
+				}
+				span {
+					color: #616e82;
+					text-align: right;
+					font-family: $fontFamily;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+					width: 304px;
+				}
+				p {
+					display: flex;
+					padding: 10px 20px;
+					align-items: center;
+					gap: 8px;
+					border-radius: 52px;
+					border: 1px solid var(--grey-sapphire-3, #b3bcc8);
+					background: var(--grey-sapphire-6, #eff1f4);
+					color: var(--dark-sapphire-5, #616e82);
+					font-family: $fontFamily;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					letter-spacing: 0.43px;
+					margin: 0;
+				}
+			}
+			.media-file {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+		.text-area {
+			.textArea {
+				resize: none !important;
+				color: var(--grey-sapphire, #7c889b);
+				font-family: Poppins;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 24px;
+			}
+			p {
+				margin: 24px 0 6px 0;
+				text-align: left;
+				color: var(--dark-sapphire-4, #303d51);
+				font-family: Poppins;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 24px; /* 171.429% */
+			}
+		}
+	}
+	.mesg-details {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 24px;
+		label {
+			color: #303d51;
+			font-family: $fontFamily;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			margin-top: 6px;
+		}
+		span {
+			color: #616e82;
+			margin-top: 5px;
+			font-family: $fontFamily;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			word-break: break-all;
+			width: 580px;
+			border-radius: 4px;
+			border: 1px solid var(--grey-sapphire-5, #e0e4e9);
+			background: var(--white, #fff);
+			text-align: start;
+			padding: 12px 16px;
+		}
+	}
+	.details-btn {
+		display: flex;
+		gap: 19px;
+		margin-top: 24px;
+		padding-top: 32px;
+		.backBtn {
+			width: 164px;
+			padding: 16px 0px;
+			border-radius: 4px;
+			border: 1px solid var(--primary-sapphire-1, #863288);
+			background: var(--white, #fff);
+			color: var(--primary-sapphire-1, #863288);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 100% */
+		}
+		.activeBtn {
+			width: 215px;
+			padding: 16px 0px;
+			border: none;
+			border-radius: 4px;
+			border: 1px solid var(--primary-sapphire-1, #863288);
+			background: var(--primary-sapphire-1, #863288);
+			color: var(--white, #fff);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 100% */
+		}
+		button {
+			cursor: pointer;
+		}
+	}
+}

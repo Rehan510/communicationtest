@@ -1,0 +1,188 @@
+@import './variable';
+
+.app-header {
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 18px 0;
+	transition: 0.15s ease;
+	padding: 0 0 0 28px;
+	h1 {
+		color: var(--black, #000);
+		font-family: $fontFamily;
+		font-size: 24px;
+		font-weight: 600;
+	}
+	&.sticky {
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		animation: onScrollHeader 0.5s linear;
+		box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.07);
+		@keyframes onScrollHeader {
+			from {
+				transform: translateY(-200px);
+			}
+			to {
+				transform: translateY(0);
+			}
+		}
+		transform: translateY(0);
+	}
+	.header-action {
+		display: flex;
+		align-items: center;
+		color: black;
+		margin-right: 0.5rem;
+		position: relative;
+		cursor: pointer;
+		.icon-wrap {
+			border: 1px solid #ddd;
+			border-radius: 6px;
+			width: 40px;
+			min-width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 1rem;
+			position: relative;
+			&.new-noti {
+				&:before {
+					content: '';
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					background: green;
+					border: 2px solid white;
+					top: 0.5rem;
+					right: 0.5rem;
+					border-radius: 100px;
+				}
+			}
+		}
+		.header-search {
+			.ant-input-affix-wrapper {
+				background: #f6f6f6;
+				margin: 0 1rem;
+				width: 100%;
+				max-width: 400px;
+				min-width: 400px;
+				position: relative;
+
+				input {
+					border: 0;
+					background: none;
+				}
+				.searchicon {
+					position: absolute;
+					top: 23px;
+					left: 4px;
+					width: 17px;
+					height: 20px;
+				}
+				.form-control {
+					max-width: 434px;
+					border: 1px solid #c7c7c7;
+					background: #f8f8f8 0% 0% no-repeat padding-box;
+					font-family: 'Helvetica Neue';
+					font-size: 17px;
+					letter-spacing: 0px;
+					color: #686868;
+					opacity: 1;
+					text-indent: 1.8rem;
+					width: 400px;
+					height: 42px;
+					border-radius: 8px;
+				}
+			}
+		}
+		.noti-wrapper {
+			display: flex;
+			align-items: center;
+			margin: 0 1rem;
+			.headerNotification {
+				display: flex;
+				gap: 10px;
+			}
+		}
+
+		.user-action {
+			display: flex;
+			align-items: center;
+			align-content: center;
+			$avatarSize: 50px;
+			.avatar-wrap {
+				max-width: $avatarSize;
+				min-width: $avatarSize;
+				height: $avatarSize;
+				overflow: hidden;
+				border-radius: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					height: $avatarSize;
+					width: auto;
+				}
+			}
+			.user-info {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				margin-left: 0.5rem;
+				line-height: 1;
+				p {
+					margin: 0;
+					width: 100%;
+					margin: 1;
+				}
+			}
+		}
+	}
+}
+.header-search {
+	position: relative;
+	input {
+		width: 400px;
+		text-indent: 7px;
+		margin-right: 1rem;
+		color: var(--grey-1, #9695a8);
+		font-family: Poppins;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		&::placeholder {
+			color: var(--grey-1, #9695a8);
+			font-family: Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	.search-icon {
+		position: absolute;
+		z-index: 1;
+		left: 11px;
+		bottom: 3px;
+	}
+}
+.ant-input:hover {
+	border-color: #dfe0eb !important;
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+.app-header {
+	.header-action {
+		.user-action {
+			.avatar-wrap {
+				img {
+					height: 53px !important;
+				}
+			}
+		}
+	}
+}

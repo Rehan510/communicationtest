@@ -1,0 +1,22 @@
+.active {
+	color: var(--correct-green-1, #0f9d58);
+	font-feature-settings:
+		'clig' off,
+		'liga' off;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	/* 125% */
+}
+.InActive {
+	color: #e85c2c;
+	font-feature-settings:
+		'clig' off,
+		'liga' off;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	/* 125% */
+}
